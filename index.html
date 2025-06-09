@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDS CHAUFFEUR - VTC Professionnel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(-45deg, #000000, #111111, #ffffff, #222222);
+      background-size: 400% 400%;
+      animation: gradientAnim 20s ease infinite;
+    }
+
+    @keyframes gradientAnim {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+  <!-- Navigation -->
+  <header class="flex items-center justify-between px-6 py-4 border-b border-white/10">
+    <h1 class="text-2xl font-bold">EDS CHAUFFEUR</h1>
+    <nav class="space-x-6">
+      <a href="#home" class="hover:underline">Accueil</a>
+      <a href="#services" class="hover:underline">Services</a>
+      <a href="#vehicules" class="hover:underline">Véhicules</a>
+      <a href="#reservation" class="hover:underline">Réserver</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Accueil -->
+  <section id="home" class="text-center py-20 px-4">
+    <h2 class="text-4xl font-bold mb-4">Transport privé haut de gamme 24/7</h2>
+    <p class="text-white/80 mb-8 max-w-xl mx-auto">EDS CHAUFFEUR vous offre confort, ponctualité et sécurité pour tous vos trajets.</p>
+    <a href="#reservation" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition">
+      Commander un VTC
+    </a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 px-6 text-center bg-black/80">
+    <h3 class="text-3xl font-bold mb-6">Nos Services</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-xl font-semibold">Aéroports</h4>
+        <p>Transferts vers Orly, CDG, Beauvais avec ponctualité assurée.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold">Courses à la demande</h4>
+        <p>Chauffeur disponible selon vos besoins à l'heure ou à la journée.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold">Événements & VIP</h4>
+        <p>Déplacements professionnels, mariages, soirées privées.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Véhicules -->
+  <section id="vehicules" class="py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">Notre Flotte</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="border p-4 rounded-xl">
+        <h4 class="text-xl font-semibold">Tesla Model 3</h4>
+        <p>Berline 100% électrique, confortable et silencieuse. Idéale pour vos trajets professionnels et personnels.</p>
+      </div>
+      <div class="border p-4 rounded-xl">
+        <h4 class="text-xl font-semibold">Peugeot 508</h4>
+        <p>Style raffiné, intérieur cuir, conduite fluide. Parfaite pour vos déplacements avec élégance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Réservation (Formsubmit) -->
+  <section id="reservation" class="py-20 px-6 text-center bg-white text-black">
+    <h3 class="text-3xl font-bold mb-4">Réservez votre trajet</h3>
+    <form action="https://formsubmit.co/edosantos22@yahoo.fr" method="POST" class="max-w-xl mx-auto space-y-4 mt-8">
+      <input type="text" name="Nom complet" placeholder="Nom complet" class="w-full px-4 py-2 border rounded" required />
+      <input type="tel" name="Téléphone" placeholder="Téléphone" class="w-full px-4 py-2 border rounded" required />
+      <input type="text" name="Départ" placeholder="Départ" class="w-full px-4 py-2 border rounded" required />
+      <input type="text" name="Destination" placeholder="Destination" class="w-full px-4 py-2 border rounded" required />
+      <input type="datetime-local" name="Date" class="w-full px-4 py-2 border rounded" required />
+      <button type="submit" class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition">
+        Envoyer
+      </button>
+    </form>
+  </section>
+
+  <!-- Moyens de paiement -->
+  <section class="py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">Moyens de paiement acceptés</h3>
+    <div class="flex flex-wrap justify-center gap-6 text-white/90 text-lg">
+      <span>💳 Carte bancaire (Visa, MasterCard)</span>
+      <span>📱 Apple Pay / Google Pay</span>
+      <span>💶 Espèces</span>
+      <span>🟢 Lydia / Paylib</span>
+      <span>🧾 Facturation entreprise</span>
+    </div>
+  </section>
+
+  <!-- Témoignages -->
+  <section class="py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">Avis clients</h3>
+    <div class="grid md:grid-cols-2 gap-8 text-white/80">
+      <div class="border border-white/20 p-6 rounded-xl">
+        <p>“Super prestation, chauffeur ponctuel et professionnel. Je recommande !”</p>
+        <span class="block mt-2 font-semibold">— Julie P.</span>
+      </div>
+      <div class="border border-white/20 p-6 rounded-xl">
+        <p>“Voiture très propre et très confortable. À refaire !”</p>
+        <span class="block mt-2 font-semibold">— Nassim D.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact" class="border-t border-white/10 py-10 text-center text-white/70">
+    <p class="mb-2">📞 0763987192 | ✉ edosantos22@yahoo.fr</p>
+    <div class="space-x-4 mb-2">
+      <a href="#" class="hover:underline">Facebook</a>
+      <a href="#" class="hover:underline">Instagram</a>
+      <a href="#" class="hover:underline">LinkedIn</a>
+    </div>
+    <p class="mt-4">&copy; 2025 EDS CHAUFFEUR. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
